@@ -1,8 +1,8 @@
-import { reload } from "/modules/cards_reload/ui.js";
-import { createHeader } from "/modules/index.js";
+import { createHeader, reload } from "./modules/ui"
+
 let body = document.querySelector('.header')
-createHeader(body)
 let rel = document.querySelector('.reload')
+
 let array = [
     {
         type: 'Visa',
@@ -25,4 +25,6 @@ let array = [
         background: 'linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%)'
     }
 ]
+
+createHeader(body)
 reload(array, rel)

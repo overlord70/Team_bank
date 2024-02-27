@@ -4,16 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"json-server -p 8080 -w db.json\" \"vite\"",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "axios": "^1.6.7",
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-alpha.23",
     "sass": "^1.71.1",
     "vite": "^5.1.4"
-  },
-  "dependencies": {
-    "json-server": "^1.0.0-alpha.23"
   }
 }

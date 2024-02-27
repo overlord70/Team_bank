@@ -5,12 +5,11 @@
 }
 
 .wrap {
-    width: 1200px;
-    margin: 0 auto;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
 }
 
 .add {
@@ -90,7 +89,7 @@
     padding-top: 44px;
 }
 
-.all{
+.all {
     display: flex;
     flex-direction: column;
     gap: 30px;
