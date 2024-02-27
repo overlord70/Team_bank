@@ -32,6 +32,10 @@ function view_cards(main_place, place) {
 function box() {
     let cont = document.createElement('div')
     cont.classList.add('cont')
+    let h1 = document.createElement('h1')
+    h1.innerHTML = 'Мои кошельки'
+    let p = document.createElement('p')
+    p.innerHTML = 'alexadams@google.com'
     let div = document.createElement('div')
     div.classList.add('all')
 
@@ -40,7 +44,7 @@ function box() {
         
         box.classList.add('ex')
 
-        div.append(cont)
+        div.append(h1, p, cont)
         cont.append(box)
     }
     return div
