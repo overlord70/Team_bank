@@ -1,6 +1,5 @@
 
-
-function createHeader() {
+export function createHeader(place) {
     let header = document.createElement('header')
 let box = document.createElement('div')
 let box_l = document.createElement('div')
@@ -22,7 +21,7 @@ koshelek.classList.add('koshelek')
 akcii.classList.add('akcii')
 icon.classList.add('icon')
 
-document.body.appendChild(header)
+place.append(header)
 header.append(box)
 box.append(box_l, box_r)
 box_l.append(glavnaya, koshelek, akcii)
