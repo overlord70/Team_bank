@@ -47,7 +47,6 @@ img{
       grid-template-columns: repeat(4,1fr);
       .card_visa{
           position: relative;
-          background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
           width: 282px;
           height: 160px;
           border-radius: 15px;
