@@ -34,11 +34,10 @@ akcii.innerHTML = "Мои транзакции"
 email.innerHTML = 'alexadams@google.com'
 icon.src = "./img/log-out (1) 1.png"
 
+if(btn.innerHTML === 'Выйти'){}
 icon.onclick  = () => {
     let btn = document.createElement('button')
     btn.classList.add('btn')
-    btn.innerHTML = 'Выйти'
     box_r.appendChild(btn);
-    
 }    
 }
