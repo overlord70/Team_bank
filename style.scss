@@ -1,8 +1,80 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Gilroy;
 }
+
+// html {
+//   height: 100%;
+// }
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.latest_transactions {
+
+  & h1 {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  #latest_transactions_table {
+    width: 100%;
+
+    th {
+      font-family: Gilroy;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #B9C0D1;
+      padding-block: 5px;
+    }
+
+    td {
+      border-bottom: 2px solid #7c7c7c46;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-block: 10px;
+    }
+
+    td:nth-last-child(1), th:nth-last-child(1) {
+      text-align: right;
+    }
+
+    td:nth-last-child(2), th:nth-last-child(2) {
+      text-align: center;
+    }
+    td:nth-child(2), th:nth-child(2) {
+      text-align: center;
+    }
+  }
+  
+  #all_transactions_link {
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+    color: #0047FF;
+  }
+}
+
 img{
   max-width: 100%;
 }

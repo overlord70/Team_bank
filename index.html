@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="/style.scss">
+    <title>Vite App</title>
 </head>
 <body>
     <div class="header">
@@ -24,6 +26,29 @@
         </div>
     </section>
 
-    <script type="module" src="./main.js"></script>
+    <div class="wrap">
+        <div class="latest_transactions">
+            <h1>Последние транзакции</h1>
+
+            <table id="latest_transactions_table" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Отправлено с кошелька</th>
+                        <th>Категория</th>
+                        <th>Сумма транзации</th>
+                        <th>Когда</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="latest_transactions_tbody">
+                </tbody>
+            </table>
+
+            <a id="all_transactions_link" href="#">Смотреть все оплаты</a>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
