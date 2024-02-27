@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить транзакцию</title>
+    <link rel="stylesheet" href="../transactions/index.css">
+</head>
+
+<body>
+    <h1 class="title">Добавить транзакцию</h1>
+    <div class="container">
+        <div class="transaction-box">
+            <form id="add-transaction" name="transactionAdd">
+                <input type="text" name="wallet" placeholder="Из кошелька">
+                <select name="currency">
+                    <option value="UZS">UZS</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                </select>
+                <input type="number" name="amount" placeholder="Сумма">
+                <input type="text" name="category" placeholder="Категория">
+                <input type="text" name="description" placeholder="Описание">
+                <!-- <input type="text" name="total" placeholder="Баланс"> -->
+                <button id="reg-add">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../transactions/index.js"></script>
+</body>
+
+</html>
