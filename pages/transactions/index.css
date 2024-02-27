@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#add-transaction {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 438px;
+
+}
+
+input,
+select {
+    height: 56px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    outline-width: 2px;
+    outline-color: #0047FF;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+
+form button {
+    height: 56px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #0047FF;
+    padding-block: 10px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s ease;
+}
