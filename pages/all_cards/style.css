@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.add {
+    width: 282px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px dashed black;
+    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(to right, rgb(233, 233, 233), rgba(255, 255, 255, 0), rgb(230, 230, 230));
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 5px 15px 0 rgb(175, 197, 235);
+    transition: 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.add:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 10px 20px 0 rgb(136, 166, 218);
+    background: linear-gradient(to right, rgb(226, 226, 255), rgb(255, 255, 255), rgb(226, 226, 255));
+
+    .circle {
+        width: 95px;
+        height: 95px;
+    }
+
+    .circle::after {
+        font-size: 95px;
+    }
+}
+
+.add:active {
+    box-shadow: 0 15px 25px 0 rgb(116, 146, 197);
+    background: linear-gradient(to right, rgb(199, 199, 199), rgb(255, 255, 255), rgb(199, 199, 199));
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: relative;
+    transition: .5s ease;
+}
+
+.circle::after {
+    content: "+";
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ex {
+    width: 282px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 44px;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
