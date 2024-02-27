@@ -11,8 +11,6 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
-
-
     box.classList.add('box')
     box_l.classList.add('box_l')
     box_r.classList.add('box_r')
@@ -22,7 +20,7 @@ export function createHeader() {
     akcii.classList.add('akcii')
     icon.classList.add('icon')
 
-    document.body.appendChild(header)
+    document.body.prepend(header)
     header.append(box)
     box.append(box_l, box_r)
     box_l.append(glavnaya, koshelek, akcii)
