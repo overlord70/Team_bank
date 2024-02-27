@@ -1,18 +1,13 @@
 import { createHeader } from "../../modules/index.js"
 
+let add = document.querySelector('.add')
 let body = document.body
 let wrap = document.querySelector('.wrap')
 
-view_cards(body, wrap)
+view_cards(body, wrap, add)
 
-function view_cards(main_place, place) {
+function view_cards(main_place, place, btn) {
     main_place.innerHTML = ""
-
-    let add = document.createElement('div')
-    let cirlce = document.createElement('div')
-
-    add.classList.add('add')
-    cirlce.classList.add('circle')
 
     let header = createHeader()
     let div = box()
@@ -21,10 +16,9 @@ function view_cards(main_place, place) {
 
     main_place.append(header, place)
     place.append(div)
-    cont.append(add)
-    add.append(cirlce)
+    cont.append(btn)
 
-    add.onclick = () => {
+    btn.onclick = () => {
         window.location.href = "dobavte_stranitsu.html"
     }
 }
