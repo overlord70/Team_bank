@@ -86,3 +86,17 @@ export function createHeader() {
 
     return header
 }
+
+
+export function toaster(text) {
+    const custom_alert = document.createElement('div')
+
+        custom_alert.classList.add('error')
+        custom_alert.innerHTML = text
+
+        document.body.append(custom_alert)
+
+        setTimeout(() => {
+            custom_alert.remove()
+        }, 3000)
+}
