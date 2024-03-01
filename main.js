@@ -28,3 +28,17 @@ let array = [
 
 createHeader(body)
 reload(array, rel)
+
+const userInfo = {
+    name: document.querySelector('.nameView'),
+    surname: document.querySelector('.surnameView'),
+    emailHeader: document.querySelector('.emailView'),
+    email: document.querySelector('.email')
+}
+
+let user = JSON.parse(localStorage.getItem("userInfo"))
+
+userInfo.name.innerHTML = user.name
+userInfo.surname.innerHTML = user.surname
+userInfo.email.innerHTML = user.email
+userInfo.emailHeader.innerHTML = user.email

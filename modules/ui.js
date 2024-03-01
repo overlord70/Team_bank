@@ -58,6 +58,7 @@ export function createHeader() {
     koshelek.classList.add('koshelek')
     akcii.classList.add('akcii')
     icon.classList.add('icon')
+    email.classList.add('emailView')
 
     document.body.prepend(header)
     header.append(box)
@@ -85,4 +86,18 @@ export function createHeader() {
     }
 
     return header
+}
+
+
+export function toaster(text) {
+    const custom_alert = document.createElement('div')
+
+        custom_alert.classList.add('error')
+        custom_alert.innerHTML = text
+
+        document.body.append(custom_alert)
+
+        setTimeout(() => {
+            custom_alert.remove()
+        }, 3000)
 }

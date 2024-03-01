@@ -1,4 +1,25 @@
 {
   "users": [
+    {
+      "id": "d6fe",
+      "email": "dsarifkulo021@gmail.com",
+      "name": "Daler",
+      "surname": "Sharifkulov",
+      "password": "1234"
+    },
+    {
+      "id": "1d4d",
+      "email": "ruslandjavadov998@gmail.com",
+      "name": "gardus",
+      "surname": "baber",
+      "password": "1234"
+    },
+    {
+      "id": "9aa2",
+      "email": "asd@gmail.com",
+      "name": "Ivan",
+      "surname": "Hamers",
+      "password": "1234"
+    }
   ]
 }

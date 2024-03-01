@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/public/fonts/Gilroy/stylesheet.css">
-    <link rel="stylesheet" href="./signin.scss">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.scss">
 </head>
 <body>
-    
 
     <div class="wrap">
-        <div class="sign-wrap">
-            <h1>Войти</h1>
-
-            <form id="sign-form" name="signForm">
-                <input placeholder="Почта" type="email" name="email">
-                <input placeholder="Пороль" type="password" name="password">
-                <button>Войти</button>
+        <div class="reg-wrap">
+            <h1 class="reg-title">Вход</h1>
+    
+            <form name="signin">
+                <input placeholder="Email" type="email" name="email">
+                <input placeholder="password" type="password" name="password">
+                <button>Продолжить</button>
             </form>
-
-            <a class="reg-link" href="/pages/signup/">Регистрация</a>
         </div>
     </div>
     
-
-    <script type="module" src="./signin.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
