@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/fonts/Gilroy/stylesheet.css">
     <link rel="stylesheet" href="/style.scss">
+    <script defer src="/modules/guardian.js"></script>
     <title>Vite App</title>
 </head>
 <body>
@@ -14,14 +15,14 @@
     </div>
     <section class="first">
         <div class="wrap">
-            <h1>Добро пожаловать, <span class="nameView">Alex</span> <span class="surnameView">Adams</span>!</h1>
+            <h1>Добро пожаловать, <span id="user"></span> <span class="user_sn"></span>!</h1>
             <p class="email">alexadams@google.com</p>
             <div class="cards">
                 <h2>Мои кошельки</h2>
                 <div class="reload">
                     
                 </div>
-                <p class="pocket">Смотреть все кошельки</p>
+                <a href="/pages/wallets/" class="pocket">Смотреть все кошельки</a>
             </div>
         </div>
     </section>

@@ -28,8 +28,9 @@ form.onsubmit = (e) => {
                     return
                 }
                 
-                localStorage.setItem("userInfo", JSON.stringify(res_user))
-                
+                delete res_user.password
+
+                localStorage.setItem("user", JSON.stringify(res_user))
                 location.assign('/')
             })
         }

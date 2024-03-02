@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../add_the_card/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="/modules/guardian.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <div class="reg-wrap">
             <h1 class="reg-title">Добавить кошелек</h1>
-    
+
             <form id="add_card-form" name="add_cardForm">
-                <input placeholder="Имя" type="text" name="namecard">
-                <select placeholder="Валюта" type="text" name="currency"> 
-                    <option value="UZS">UZS</option>
-                    <option value="USD">$ USD</option>
-                    <option value="RUB">₽ RUB</option>
-                    <option value="KZT">₸ KZT</option>
+                <input placeholder="Имя" type="text" name="name">
+                <select placeholder="Валюта" type="text" name="currency">
+
                 </select>
-                <input type="number" placeholder="Баланс" name="total">
+                <input type="number" placeholder="Баланс" name="balance">
 
                 <button id="regSubmit">Продолжить</button>
             </form>
         </div>
     </div>
 
-    <script src="../add_the_card/script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>

@@ -1,13 +1,27 @@
+function getRGB() {
+    function randomize() {
+        return Math.floor(Math.random() * 255)
+    }
+
+    let r = randomize()
+    let g = randomize()
+    let b = randomize()
+
+    return `rgb(${r}, ${g}, ${b})`
+}
 export function reload(arr, place) {
     place.innerHTML = ''
+
     for (const item of arr) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
+
         div_1.classList.add('card_visa')
-        div_1.style.background = item.background
-        h3.innerHTML = item.type
-        p.innerHTML = item.Money
+        div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        h3.innerHTML = item.name
+        p.innerHTML = item.currency
+
         div_1.append(h3, p)
         place.append(div_1)
     }
@@ -50,6 +64,7 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
+    email.classList.add("user_mail")
     box.classList.add('box')
     box_l.classList.add('box_l')
     box_r.classList.add('box_r')
@@ -58,7 +73,6 @@ export function createHeader() {
     koshelek.classList.add('koshelek')
     akcii.classList.add('akcii')
     icon.classList.add('icon')
-    email.classList.add('emailView')
 
     document.body.prepend(header)
     header.append(box)
@@ -89,15 +103,20 @@ export function createHeader() {
 }
 
 
-export function toaster(text) {
+export function toaster(text, type) {
     const custom_alert = document.createElement('div')
+    const time_bar = document.createElement('div')
 
-        custom_alert.classList.add('error')
+        custom_alert.classList.add('toaster', `toaster_${type}`)
+        custom_alert.classList.add('toaster-anim')
+        time_bar.classList.add('time_bar')
         custom_alert.innerHTML = text
+
+        custom_alert.append(time_bar)
 
         document.body.append(custom_alert)
 
         setTimeout(() => {
             custom_alert.remove()
-        }, 3000)
+        }, 5000)
 }

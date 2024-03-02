@@ -109,3 +109,73 @@ p {
     font-weight: 700;
     color: #0047FF;
 }
+
+header {
+    img {
+        width: 20%;
+        height: 20%;
+    }
+
+
+    a {
+        color: black;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+        background-color: #F0F0F0;
+        align-items: center;
+
+    }
+
+
+    .btn {
+        color: red;
+        width: 50%;
+        height: 50%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .box_l {
+        display: flex;
+        gap: 30px;
+    }
+
+    .box_r {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.reload {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    .card_visa {
+        position: relative;
+        width: 282px;
+        height: 160px;
+        border-radius: 15px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            color: white;
+            margin: 10px 20px;
+        }
+
+        p {
+            margin: 0 20px;
+            position: absolute;
+            bottom: 10px;
+            color: white;
+        }
+    }
+}
