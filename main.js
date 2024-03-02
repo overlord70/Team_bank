@@ -3,6 +3,8 @@ import { createHeader, reload } from "./modules/ui"
 let body = document.querySelector('.header')
 let rel = document.querySelector('.reload')
 
+
+
 let array = [
     {
         type: 'Visa',
@@ -28,3 +30,20 @@ let array = [
 
 createHeader(body)
 reload(array, rel)
+
+
+const aboutuser = {
+    name: document.querySelector('.user'),
+    email: document.querySelector('.email'),
+    head_mail: document.querySelector(".user_mail"),
+    user_sn: document.querySelector(".user_sn")
+}
+
+let user = JSON.parse(localStorage.getItem('aboutuser'))
+
+aboutuser.name.innerHTML = user.name
+aboutuser.email.innerHTML = user.email
+aboutuser.head_mail.innerHTML = user.email
+aboutuser.user_sn.innerHTML = user.surname
+
+console.log(user);

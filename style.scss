@@ -14,14 +14,17 @@ img {
 }
 
 .error {
-  width: fit-content;
+  width: 100%;
+  text-align: center;
   padding: 5px 10px;
   font-size: medium;
   border-radius: 12px;
-  background-color: rgb(222, 107, 107);
+  background-color: rgb(246, 86, 86);
   position: absolute;
   top: 20px;
   left: 20px;
+  transition: 1s ease;
+  color: white;
 }
 
 .wrap {
