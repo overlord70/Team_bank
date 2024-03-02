@@ -6,6 +6,20 @@
       "name": "Daler",
       "surname": "Sharifkulov",
       "password": "1234"
+    },
+    {
+      "id": "15d4",
+      "email": "abduxafizovjamik@gmail.com",
+      "name": "Талибжанов ",
+      "surname": "бегжон",
+      "password": "123456789"
+    },
+    {
+      "id": "87b9",
+      "email": "weljnieqwie@gmail.com",
+      "name": "Furkat",
+      "surname": "Usupov",
+      "password": "123"
     }
   ]
 }

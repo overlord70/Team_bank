@@ -1,5 +1,6 @@
 import { getData, postData } from '../../modules/http'
 import { toaster } from '../../modules/ui'
+
 const form = document.forms.namedItem('signin')
 
 form.onsubmit = (e) => {
@@ -19,7 +20,7 @@ form.onsubmit = (e) => {
                 const [res_user] = res.data
 
                 if(!res_user) {
-                    toaster('Такого пользователя не существует', 'succes')    
+                    toaster('Такого пользователя не существует')    
                     return
                 }
                 if(res_user.password !== password) {
@@ -27,7 +28,9 @@ form.onsubmit = (e) => {
                     return
                 }
                 
+                localStorage.setItem("aboutuser", JSON.stringify(res_user))
+                
                 location.assign('/')
             })
+        }
     }
-}
