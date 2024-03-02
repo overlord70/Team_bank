@@ -21,5 +21,35 @@
       "surname": "Usupov",
       "password": "123"
     }
-  ]
+  ],
+  "wallets": [
+    {
+      "id": 0.4400490557438985,
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "Daler",
+      "currency": "USD",
+      "balance": "1234"
+    },
+    {
+      "id": 0.42344722339894103,
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "VISA",
+      "currency": "UZS",
+      "balance": "100"
+    },
+    {
+      "id": 0.7682254708077147,
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "Daler",
+      "currency": "BAM",
+      "balance": "12345"
+    }
+  ],
+  "transactions": []
 }

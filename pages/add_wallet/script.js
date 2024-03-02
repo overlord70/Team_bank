@@ -1,27 +1,45 @@
-let form = document.forms.add_cardForm
+import { getSymbols, postData } from "../../modules/http"
+
+const form = document.forms.add_cardForm
+const select = form.querySelector('select')
+
+getSymbols()
+    .then((symbols) => {
+        console.log('start');
+        for(let key in symbols) {
+            let opt = new Option(`${key} - ${symbols[key]}`, key)
+
+            select.append(opt)
+        }
+    })
 
 form.onsubmit = (e) => {
     e.preventDefault()
 
-    let namecard = document.querySelector("input[name='namecard']").value;
-    let currency = document.querySelector("select[name='currency']").value;
-    let total = document.querySelector("input[name='total']").value;
-
-    let fm = new FormData(form)
-    let user = {
+    let fm = new FormData(e.target)
+    let wallet = {
         id: Math.random(),
-        name: namecard,
-        currency: currency,
-        balance: total,
-        created_at: new Date().getHours() + ":" + new Date().getMinutes(),
-        updated_at: new Date().getHours() + ":" + new Date().getMinutes(),
+        created_at: new Date().toLocaleDateString(),
+        updated_at: new Date().toLocaleDateString(),
+        user_id: JSON.parse(user)?.id
     }
 
     fm.forEach((value, key) => {
-        user[key] = value
+        wallet[key] = value
     })
 
-    localStorage.setItem("user", JSON.stringify(user))
-    console.log(user);
+    const {name, currency, balance} = wallet
+
+    if(name && currency && balance) {
+        postData('/wallets', wallet)
+            .then(res => {
+                if(res.status === 200 || res.status === 201) {
+                    alert('Success')
+                    location.assign('/pages/wallets/')
+                }
+            })
+    }
+
+    
 }
 

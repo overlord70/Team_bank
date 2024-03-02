@@ -1,13 +1,27 @@
+function getRGB() {
+    function randomize() {
+        return Math.floor(Math.random() * 255)
+    }
+
+    let r = randomize()
+    let g = randomize()
+    let b = randomize()
+
+    return `rgb(${r}, ${g}, ${b})`
+}
 export function reload(arr, place) {
     place.innerHTML = ''
+
     for (const item of arr) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
+
         div_1.classList.add('card_visa')
-        div_1.style.background = item.background
-        h3.innerHTML = item.type
-        p.innerHTML = item.Money
+        div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        h3.innerHTML = item.name
+        p.innerHTML = item.currency
+
         div_1.append(h3, p)
         place.append(div_1)
     }

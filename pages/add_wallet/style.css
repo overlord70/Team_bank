@@ -12,6 +12,7 @@ img {
 .wrap {
     width: 1200px;
     margin: 0 auto;
+    background: linear-gradient(rgb(200,200,200));
 }
 
 .reg-wrap {
