@@ -1,3 +1,4 @@
+
 function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
@@ -90,13 +91,11 @@ export function createHeader() {
     akcii.innerHTML = "Мои транзакции"
     email.innerHTML = 'alexadams@google.com'
     icon.src = "../../public/log-out (1) 1.png"
+    icon.style.cursor = 'pointer'
 
     icon.onclick = () => {
-        let btn = document.createElement('button')
-        btn.classList.add('btn')
-        btn.innerHTML = 'Выйти'
-        box_r.appendChild(btn);
-
+        localStorage.removeItem('user')
+        location.assign('/pages/signin/')
     }
 
     return header
