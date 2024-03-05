@@ -20,11 +20,32 @@
       "name": "Furkat",
       "surname": "Usupov",
       "password": "123"
+    },
+    {
+      "id": "1d4d",
+      "email": "ruslandjavadov998@gmail.com",
+      "name": "gardus",
+      "surname": "baber",
+      "password": "1234"
+    },
+    {
+      "id": "9aa2",
+      "email": "asd@gmail.com",
+      "name": "Ivan",
+      "surname": "Hamers",
+      "password": "1234"
+    },
+    {
+      "id": "b7a8",
+      "email": "baber@gmail.com",
+      "name": "damir",
+      "surname": "dambitovich",
+      "password": "1234"
     }
   ],
   "wallets": [
     {
-      "id": 0.4400490557438985,
+      "id": "0.4400490557438985",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
@@ -33,7 +54,7 @@
       "balance": "1234"
     },
     {
-      "id": 0.42344722339894103,
+      "id": "0.42344722339894103",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
@@ -42,13 +63,139 @@
       "balance": "100"
     },
     {
-      "id": 0.7682254708077147,
+      "id": "0.7682254708077147",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
       "name": "Daler",
       "currency": "BAM",
       "balance": "12345"
+    },
+    {
+      "id": "0.4128494505646596",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "Gradus Visa",
+      "currency": "CLF",
+      "balance": "30000"
+    },
+    {
+      "id": "0.203512042682791",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "figoo",
+      "currency": "AMD",
+      "balance": "4444444"
+    },
+    {
+      "id": "0.30000351599848574",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "Arabic",
+      "currency": "AED",
+      "balance": "55544554"
+    },
+    {
+      "id": "0.6762300151826555",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "rubleeees",
+      "currency": "RUB",
+      "balance": "1000000"
+    },
+    {
+      "id": "0.9762308473939847",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "max pain",
+      "currency": "BRL",
+      "balance": "1"
+    },
+    {
+      "id": "0.7668035463227536",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "deneeeg",
+      "currency": "JPY",
+      "balance": "666666"
+    },
+    {
+      "id": "0.4384463164497967",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "yupiiii",
+      "currency": "SGD",
+      "balance": "77777"
+    },
+    {
+      "id": "0.8866946535582323",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "1d4d",
+      "name": "dolllars",
+      "currency": "USD",
+      "balance": "99999"
+    },
+    {
+      "id": "0.10749882688432977",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "fffff",
+      "currency": "AED",
+      "balance": "333"
+    },
+    {
+      "id": "0.012517833628615804",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "fffff",
+      "currency": "AED",
+      "balance": "333"
+    },
+    {
+      "id": "0.22049464613657044",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "ffff",
+      "currency": "AED",
+      "balance": "44444"
+    },
+    {
+      "id": "0.611076091977895",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "ffff",
+      "currency": "AED",
+      "balance": "44444"
+    },
+    {
+      "id": 0.7771882909729526,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "1d4d",
+      "name": "hghg",
+      "currency": "AED",
+      "balance": "3333"
+    },
+    {
+      "id": 0.819833541860906,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "9aa2",
+      "name": "sdasdasd",
+      "currency": "AED",
+      "balance": "333"
     }
   ],
   "transactions": []

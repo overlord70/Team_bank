@@ -1,3 +1,4 @@
+
 function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
@@ -90,28 +91,31 @@ export function createHeader() {
     akcii.innerHTML = "Мои транзакции"
     email.innerHTML = 'alexadams@google.com'
     icon.src = "../../public/log-out (1) 1.png"
+    icon.style.cursor = 'pointer'
 
     icon.onclick = () => {
-        let btn = document.createElement('button')
-        btn.classList.add('btn')
-        btn.innerHTML = 'Выйти'
-        box_r.appendChild(btn);
-
+        localStorage.removeItem('user')
+        location.assign('/pages/signin/')
     }
 
     return header
 }
 
 
-export function toaster(text) {
+export function toaster(text, type) {
     const custom_alert = document.createElement('div')
+    const time_bar = document.createElement('div')
 
-        custom_alert.classList.add('error')
+        custom_alert.classList.add('toaster', `toaster_${type}`)
+        custom_alert.classList.add('toaster-anim')
+        time_bar.classList.add('time_bar')
         custom_alert.innerHTML = text
+
+        custom_alert.append(time_bar)
 
         document.body.append(custom_alert)
 
         setTimeout(() => {
             custom_alert.remove()
-        }, 3000)
+        }, 5000)
 }
