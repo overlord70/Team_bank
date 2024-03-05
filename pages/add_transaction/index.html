@@ -14,13 +14,10 @@
     <div class="container">
         <div class="transaction-box">
             <form id="add-transaction" name="transactionAdd">
-                <input type="text" name="wallet" placeholder="Из кошелька">
-                <select name="currency">
-                    <option value="UZS">UZS</option>
-                    <option value="USD">USD</option>
-                    <option value="RUB">RUB</option>
+                <select name="wallet" id="wallet" >
+      
                 </select>
-                <input type="number" name="amount" placeholder="Сумма">
+                <input type="number" name="total" id="total" placeholder="Сумма">
                 <input type="text" name="category" placeholder="Категория">
                 <input type="text" name="description" placeholder="Описание">
                 <!-- <input type="text" name="total" placeholder="Баланс"> -->
@@ -29,7 +26,7 @@
         </div>
     </div>
 
-    <script src="../transactions/index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
