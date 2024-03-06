@@ -87,7 +87,7 @@
       "user_id": "1d4d",
       "name": "figoo",
       "currency": "AMD",
-      "balance": "4444444"
+      "balance": 4441445
     },
     {
       "id": "0.30000351599848574",
@@ -105,7 +105,7 @@
       "user_id": "1d4d",
       "name": "rubleeees",
       "currency": "RUB",
-      "balance": "1000000"
+      "balance": 999223
     },
     {
       "id": "0.9762308473939847",
@@ -180,7 +180,7 @@
       "balance": "44444"
     },
     {
-      "id": 0.7771882909729526,
+      "id": "0.7771882909729526",
       "created_at": "04.03.2024",
       "updated_at": "04.03.2024",
       "user_id": "1d4d",
@@ -189,7 +189,7 @@
       "balance": "3333"
     },
     {
-      "id": 0.819833541860906,
+      "id": "0.819833541860906",
       "created_at": "04.03.2024",
       "updated_at": "04.03.2024",
       "user_id": "9aa2",
@@ -198,5 +198,26 @@
       "balance": "333"
     }
   ],
-  "transactions": []
+  "transactions": [
+    {
+      "id": "9e1d",
+      "wallet": "0.203512042682791",
+      "category": "ghbn",
+      "description": "eeee",
+      "total": "2222",
+      "created_at": "20:03:34",
+      "updated_at": "20:03:34",
+      "user_id": "1d4d"
+    },
+    {
+      "id": "1dd8",
+      "wallet": "0.6762300151826555",
+      "category": "car",
+      "description": "buy car",
+      "total": "777",
+      "created_at": "20:13:33",
+      "updated_at": "20:13:33",
+      "user_id": "1d4d"
+    }
+  ]
 }

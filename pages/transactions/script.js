@@ -1,6 +1,13 @@
+import { getData } from "../../modules/http";
 import { createHeader, reloadTransactions } from "../../modules/ui";
 
-const tbody = document.querySelector('tbody')
+const user = JSON.parse(localStorage.getItem('user'))
 
+const tbody = document.querySelector('tbody')
 createHeader()
-reloadTransactions([1,2,3], tbody, 'full')
+
+getData('/transactions?user_id=' + user.id)
+    .then(res => {
+        reloadTransactions(res.data, tbody, 'full')
+    })
+
