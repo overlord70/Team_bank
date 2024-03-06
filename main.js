@@ -17,8 +17,8 @@ email_view.innerHTML = user.email
 // reload(array, rel)
 
 getData('/wallets?user_id=' + user.id)
-    .then(res => {
-        if (res.status === 200 || res.status === 201) {
-            reload(res.data.slice(0, 4), rel);
-        }
-    })
+.then(res => {
+    if (res.status === 200 || res.status === 201) {
+        reload(res.data.slice(0, 4), rel);
+    }
+})
