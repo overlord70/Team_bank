@@ -47,7 +47,7 @@ export function reloadTransactions(arr, place, size) {
         tr.append(idView, walletView, categoryView, sumView, daysAgoView)
 
         idView.innerHTML = item.id
-        walletView.innerHTML = item.wallet
+        walletView.innerHTML = item.wallet.name
         categoryView.innerHTML = item.category
         sumView.innerHTML = item.total
         daysAgoView.innerHTML = item.created_at

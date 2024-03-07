@@ -38,26 +38,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-
     form.onsubmit = async (e) => {
         e.preventDefault()
 
         const formData = new FormData(form);
         const transaction = {
-            wallet: formData.get("wallet"),
-            wallet: formData.get("wallet"),
-            category: formData.get("category"),
-            description: formData.get("description"),
-            total: formData.get("total"),
             created_at: new Date().toLocaleTimeString(),
             updated_at: new Date().toLocaleTimeString(),
             user_id: user.id,
         };
+        formData.forEach((val, key) => transaction[key] = val)
 
         if (total_inp.value > 0 && !total_inp.classList.contains('error_input')) {
             selected_wallet.balance = +selected_wallet.balance - +total_inp.value
 
-            patch(`/wallets/${selected_wallet.id}`, { balance: selected_wallet.balance })
+            transaction.wallet_id = selected_wallet.id 
+            delete selected_wallet.id
+            delete selected_wallet.user_id
+            transaction.wallet = selected_wallet
+
+            patch(`/wallets/${transaction.wallet_id}`, { balance: selected_wallet.balance })
                 .then(res => {
                     if (res.status === 200 || res.status === 201) {
                         postData('/transactions', transaction)
