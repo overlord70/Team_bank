@@ -1,3 +1,4 @@
+import moment from "moment"
 import { getData } from "./modules/http"
 import { createHeader, reload, reloadTransactions, toaster } from "./modules/ui"
 let user = JSON.parse(localStorage.getItem('user'))
@@ -5,6 +6,7 @@ let user = JSON.parse(localStorage.getItem('user'))
 let body = document.querySelector('.header')
 const tbody = document.querySelector('#latest_transactions_tbody')
 createHeader(body)
+
 
 let user_view = document.querySelector('#user')
 let email_view = document.querySelector('.email')

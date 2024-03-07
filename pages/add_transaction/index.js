@@ -1,3 +1,4 @@
+import moment from "moment";
 import { getData, postData } from "../../modules/http";
 import { patch } from "../../modules/http";
 import { toaster } from "../../modules/ui";
@@ -14,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => {
             for (let item of res.data) {
                 let opt = new Option(`${item.name}`, item.id)
+
+                if(res.data.indexOf(item) === 0) {
+                    opt.selected = true
+                    selected_wallet = item
+                }
 
                 select.append(opt)
             }
@@ -43,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
         const transaction = {
-            created_at: new Date().toLocaleTimeString(),
+            created_at: moment().format("YYYYMMDD, HH:m"),
             updated_at: new Date().toLocaleTimeString(),
             user_id: user.id,
         };
