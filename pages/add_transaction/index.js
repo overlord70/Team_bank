@@ -1,4 +1,6 @@
-import { getData } from "../../modules/http";
+import { getData, postData } from "../../modules/http";
+import { patch } from "../../modules/http";
+import { toaster } from "../../modules/ui";
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.forms.transactionAdd;
@@ -10,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getData('/wallets?user_id=' + user.id)
         .then(res => {
-            console.log({res});
-            for(let item of res.data) {
+            for (let item of res.data) {
                 let opt = new Option(`${item.name}`, item.id)
 
                 select.append(opt)
@@ -28,34 +29,47 @@ document.addEventListener("DOMContentLoaded", function () {
     total_inp.onkeyup = (e) => {
         const val = e.target.value
 
-        if(+val > +selected_wallet.balance) {
-            e.target.style.border = "2px solid red"   
+        if (+val > +selected_wallet.balance) {
+            e.target.classList.add('error_input')
         } else {
-            e.target.style.border = "2px solid blue"   
+            e.target.classList.remove('error_input')
         }
 
     }
 
 
-
-    form.onsubmit = (e) => {
+    form.onsubmit = async (e) => {
         e.preventDefault()
 
         const formData = new FormData(form);
         const transaction = {
-            id: Math.random(),
-            wallet: formData.get("wallet"),
-            category: formData.get("category"),
-            description: formData.get("description"),
-            total: formData.get("total"),
             created_at: new Date().toLocaleTimeString(),
             updated_at: new Date().toLocaleTimeString(),
+            user_id: user.id,
         };
+        formData.forEach((val, key) => transaction[key] = val)
 
-        // localStorage.setItem("user", JSON.stringify(user));
+        if (total_inp.value > 0 && !total_inp.classList.contains('error_input')) {
+            selected_wallet.balance = +selected_wallet.balance - +total_inp.value
 
-        console.log(user);
+            transaction.wallet_id = selected_wallet.id 
+            delete selected_wallet.id
+            delete selected_wallet.user_id
+            transaction.wallet = selected_wallet
 
-        alert(`Транзакция успешно добавлена:\n${JSON.stringify(user, null, 2)}`);
+            patch(`/wallets/${transaction.wallet_id}`, { balance: selected_wallet.balance })
+                .then(res => {
+                    if (res.status === 200 || res.status === 201) {
+                        postData('/transactions', transaction)
+                            .then(res => {
+                                if (res.status === 200 || res.status === 201) {
+                                    location.assign('/pages/transactions/')
+                                }
+                            })
+                    }
+                })
+        } else {
+            toaster('not enough money!', 'error')
+        }
     }
 })

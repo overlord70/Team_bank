@@ -10,7 +10,7 @@ export const getData = async (path) => {
 
         return res
     } catch(e) {
-        toaster(e.message)
+        toaster(e.message, 'error')
     }
 }
 export const postData = async (path, body) => {
@@ -19,7 +19,7 @@ export const postData = async (path, body) => {
 
         return res
     } catch(e) {
-        toaster(e.message)
+        toaster(e.message , 'error')
     }
 }
 
@@ -44,6 +44,16 @@ export const getSymbols = async () => {
         }
 
     } catch(e) {
-        toaster(e.message)
+        toaster(e.message, 'error')
     }
+}
+
+export const patch = async (path, body) => {
+     try {
+        const res = await axios.patch(baseURL + path, body)
+
+        return res
+     } catch(e) {
+        toaster(e.message, 'error')
+     }
 }
