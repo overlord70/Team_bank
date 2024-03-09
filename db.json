@@ -41,6 +41,20 @@
       "name": "damir",
       "surname": "dambitovich",
       "password": "1234"
+    },
+    {
+      "id": "34ff",
+      "email": "kaflaskdlas@porn.com",
+      "name": "Amir",
+      "surname": "Raxmatov",
+      "password": "amir"
+    },
+    {
+      "id": "f121",
+      "email": "amirrahmatov@porn.com",
+      "name": "Amir",
+      "surname": "Raxmatov",
+      "password": "1234"
     }
   ],
   "wallets": [
@@ -86,8 +100,8 @@
       "updated_at": "02.03.2024",
       "user_id": "1d4d",
       "name": "figoo",
-      "currency": "AMD",
-      "balance": 3330334
+      "currency": "AUD",
+      "balance": 12435.731505
     },
     {
       "id": "0.30000351599848574",
@@ -196,6 +210,15 @@
       "name": "sdasdasd",
       "currency": "AED",
       "balance": "333"
+    },
+    {
+      "id": 0.06089044334379334,
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": "f121",
+      "name": "gay",
+      "currency": "XPF",
+      "balance": "10000"
     }
   ],
   "transactions": [
