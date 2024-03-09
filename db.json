@@ -196,6 +196,24 @@
       "name": "sdasdasd",
       "currency": "AED",
       "balance": "333"
+    },
+    {
+      "id": 0.33960991062665813,
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": 6,
+      "name": "VISA",
+      "currency": "DJF",
+      "balance": "100"
+    },
+    {
+      "id": "0.16872631638626245",
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": 6,
+      "name": "HUMO",
+      "currency": "UZS",
+      "balance": "1000000"
     }
   ],
   "transactions": [
