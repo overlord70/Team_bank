@@ -476,6 +476,57 @@
       "category": "car",
       "description": "tesla",
       "wallet_id": "0.4128494505646596"
+    },
+    {
+      "id": "a60f",
+      "created_at": "20240309, 17:13",
+      "updated_at": "17:13:42",
+      "user_id": 6,
+      "wallet": {
+        "created_at": "09.03.2024",
+        "updated_at": "09.03.2024",
+        "name": "VISA",
+        "currency": "DJF",
+        "balance": 0
+      },
+      "total": "100",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.33960991062665813"
+    },
+    {
+      "id": "5ac0",
+      "created_at": "20240309, 17:14",
+      "updated_at": "17:14:50",
+      "user_id": 6,
+      "wallet": {
+        "created_at": "09.03.2024",
+        "updated_at": "09.03.2024",
+        "name": "HUMO",
+        "currency": "UZS",
+        "balance": 500000
+      },
+      "total": "500000",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.16872631638626245"
+    },
+    {
+      "id": "e3ca",
+      "created_at": "20240309, 17:16",
+      "updated_at": "17:16:36",
+      "user_id": 6,
+      "wallet": {
+        "created_at": "09.03.2024",
+        "updated_at": "09.03.2024",
+        "name": "HUMO",
+        "currency": "UZS",
+        "balance": 0
+      },
+      "total": "500000",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.16872631638626245"
     }
   ]
 }
