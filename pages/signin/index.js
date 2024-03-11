@@ -20,11 +20,11 @@ form.onsubmit = (e) => {
                 const [res_user] = res.data
 
                 if(!res_user) {
-                    toaster('Такого пользователя не существует')    
+                    toaster('Такого пользователя не существует', 'error')    
                     return
                 }
                 if(res_user.password !== password) {
-                    toaster('Не верный пароль!')    
+                    toaster('Не верный пароль!', 'error')    
                     return
                 }
                 
