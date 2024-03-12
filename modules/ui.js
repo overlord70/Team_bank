@@ -41,7 +41,7 @@ export function reloadTransactions(arr, place, size) {
     if (size === 'small') tempArr = arr.slice(0, 7)
     else if (size === 'full') tempArr = arr
 
-    for(let item of tempArr.reverse()) {
+    for (let item of tempArr.reverse()) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')
@@ -88,6 +88,18 @@ export function createHeader() {
     box_l.append(glavnaya, koshelek, akcii)
     box_r.append(email, icon)
 
+    let pages = {
+        "/": glavnaya,
+        "wallets": koshelek,
+        "transactions": akcii
+    }
+
+    let page = location.pathname.split('/')[2]
+    page = page ? page : "/"
+
+    pages[page].classList.add('active_page')
+
+
     glavnaya.href = "/"
     koshelek.href = "/pages/wallets/"
     akcii.href = "/pages/transactions/"
@@ -113,16 +125,16 @@ export function toaster(text, type) {
     const custom_alert = document.createElement('div')
     const time_bar = document.createElement('div')
 
-        custom_alert.classList.add('toaster', `toaster_${type}`)
-        custom_alert.classList.add('toaster-anim')
-        time_bar.classList.add('time_bar')
-        custom_alert.innerHTML = text
+    custom_alert.classList.add('toaster', `toaster_${type}`)
+    custom_alert.classList.add('toaster-anim')
+    time_bar.classList.add('time_bar')
+    custom_alert.innerHTML = text
 
-        custom_alert.append(time_bar)
+    custom_alert.append(time_bar)
 
-        document.body.append(custom_alert)
+    document.body.append(custom_alert)
 
-        setTimeout(() => {
-            custom_alert.remove()
-        }, 5000)
+    setTimeout(() => {
+        custom_alert.remove()
+    }, 5000)
 }
