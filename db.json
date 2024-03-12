@@ -13,6 +13,13 @@
       "name": "Ivan",
       "surname": "Grozniy",
       "password": "1234"
+    },
+    {
+      "id": "3928",
+      "email": "asdd@gmail.com",
+      "name": "asd",
+      "surname": "asd",
+      "password": "1234"
     }
   ],
   "wallets": [
@@ -42,6 +49,15 @@
       "name": "Dollars",
       "currency": "USD",
       "balance": "1000000"
+    },
+    {
+      "id": "0.7187730500745224",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "3928",
+      "name": "asd",
+      "currency": "AFN",
+      "balance": 438197582.80789
     }
   ],
   "transactions": [
@@ -197,6 +213,40 @@
       "category": "333",
       "description": "33",
       "wallet_id": "0.24150729584530173"
+    },
+    {
+      "id": "4169",
+      "created_at": "20240312, 20:27",
+      "updated_at": "20:27:20",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AED",
+        "balance": 22222111
+      },
+      "total": "111",
+      "category": "1111",
+      "description": "11",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "24e3",
+      "created_at": "20240312, 20:32",
+      "updated_at": "20:32:56",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AFN",
+        "balance": 438197582.80789
+      },
+      "total": "444444",
+      "category": "44",
+      "description": "44",
+      "wallet_id": "0.7187730500745224"
     }
   ]
 }

@@ -79,7 +79,7 @@ form.onsubmit = (e) => {
 const dates = []
 const totals = []
 
-getData('/transactions?wallet_id=' + wallet_id)
+await getData('/transactions?wallet_id=' + wallet_id)
     .then(res => {
         res.data.forEach(item => {
             let dateMin = item.created_at.split(',').at(0)
@@ -101,7 +101,7 @@ getData('/transactions?wallet_id=' + wallet_id)
         });
     })
 
-let arr = ['2024-24-24', '2024-24-24', '2024-24-24', '2024-24-24']
+
 const ctx = document.getElementById('myChart');
 new Chart(ctx, {
     type: 'line',
