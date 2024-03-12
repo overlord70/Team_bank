@@ -18,7 +18,7 @@ form.onsubmit = (e) => {
         getData('/users?email=' + email)
             .then(res => {
                 if(res.data.length > 0) {
-                    toaster('Аккаунт уже существует')
+                    toaster('Аккаунт уже существует', 'error')
                     return
                 }
                 postData('/users', user)

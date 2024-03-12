@@ -1,0 +1,14 @@
+.addTbtn {
+    border: 0;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-family: Gilroy;
+    background-color: #0047FF;
+    border-radius: 5px;
+     & a{
+        text-decoration: 0;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+     }
+}

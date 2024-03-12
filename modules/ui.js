@@ -1,4 +1,5 @@
 import moment from 'moment'
+
 function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
@@ -17,14 +18,19 @@ export function reload(arr, place) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
-
+        console.log(item);
         div_1.classList.add('card_visa')
         div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        div_1.style.cursor = 'pointer'
         h3.innerHTML = item.name
         p.innerHTML = item.currency
 
         div_1.append(h3, p)
         place.append(div_1)
+
+        div_1.onclick = () => {
+            location.assign('/pages/wallet/?id=' + item.id)
+        }
     }
 }
 

@@ -1,237 +1,202 @@
 {
   "users": [
     {
-      "id": "d6fe",
-      "email": "dsarifkulo021@gmail.com",
-      "name": "Daler",
-      "surname": "Sharifkulov",
-      "password": "1234"
-    },
-    {
-      "id": "15d4",
-      "email": "abduxafizovjamik@gmail.com",
-      "name": "Талибжанов ",
-      "surname": "бегжон",
-      "password": "123456789"
-    },
-    {
-      "id": "87b9",
-      "email": "weljnieqwie@gmail.com",
-      "name": "Furkat",
-      "surname": "Usupov",
-      "password": "123"
-    },
-    {
-      "id": "1d4d",
+      "id": "9731",
       "email": "ruslandjavadov998@gmail.com",
-      "name": "gardus",
-      "surname": "baber",
+      "name": "Gradus",
+      "surname": "Overwatch",
       "password": "1234"
     },
     {
-      "id": "9aa2",
+      "id": "a3b9",
       "email": "asd@gmail.com",
       "name": "Ivan",
-      "surname": "Hamers",
-      "password": "1234"
-    },
-    {
-      "id": "b7a8",
-      "email": "baber@gmail.com",
-      "name": "damir",
-      "surname": "dambitovich",
+      "surname": "Grozniy",
       "password": "1234"
     }
   ],
   "wallets": [
     {
-      "id": "0.4400490557438985",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "Daler",
-      "currency": "USD",
-      "balance": 1134
-    },
-    {
-      "id": "0.42344722339894103",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "VISA",
-      "currency": "UZS",
-      "balance": "100"
-    },
-    {
-      "id": "0.7682254708077147",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "Daler",
-      "currency": "BAM",
-      "balance": 1011
-    },
-    {
-      "id": "0.4128494505646596",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
+      "id": "0.24150729584530173",
+      "created_at": "11.03.2024",
+      "updated_at": "11.03.2024",
+      "user_id": "9731",
       "name": "Gradus Visa",
-      "currency": "CLF",
-      "balance": "30000"
-    },
-    {
-      "id": "0.203512042682791",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "figoo",
-      "currency": "AMD",
-      "balance": 4441445
-    },
-    {
-      "id": "0.30000351599848574",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "Arabic",
       "currency": "AED",
-      "balance": "55544554"
+      "balance": 9996666
     },
     {
-      "id": "0.6762300151826555",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "rubleeees",
-      "currency": "RUB",
-      "balance": 999223
+      "id": "0.2252802480345799",
+      "created_at": "11.03.2024",
+      "updated_at": "11.03.2024",
+      "user_id": "9731",
+      "name": "Rubles",
+      "currency": "AED",
+      "balance": 1986197.691904
     },
     {
-      "id": "0.9762308473939847",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "max pain",
-      "currency": "BRL",
-      "balance": "1"
-    },
-    {
-      "id": "0.7668035463227536",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "deneeeg",
-      "currency": "JPY",
-      "balance": "666666"
-    },
-    {
-      "id": "0.4384463164497967",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "yupiiii",
-      "currency": "SGD",
-      "balance": "77777"
-    },
-    {
-      "id": "0.8866946535582323",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "dolllars",
+      "id": "0.3094668400229559",
+      "created_at": "11.03.2024",
+      "updated_at": "11.03.2024",
+      "user_id": "9731",
+      "name": "Dollars",
       "currency": "USD",
-      "balance": "99999"
-    },
-    {
-      "id": "0.10749882688432977",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "fffff",
-      "currency": "AED",
-      "balance": "333"
-    },
-    {
-      "id": "0.012517833628615804",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "fffff",
-      "currency": "AED",
-      "balance": "333"
-    },
-    {
-      "id": "0.22049464613657044",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "ffff",
-      "currency": "AED",
-      "balance": "44444"
-    },
-    {
-      "id": "0.611076091977895",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "ffff",
-      "currency": "AED",
-      "balance": "44444"
-    },
-    {
-      "id": "0.7771882909729526",
-      "created_at": "04.03.2024",
-      "updated_at": "04.03.2024",
-      "user_id": "1d4d",
-      "name": "hghg",
-      "currency": "AED",
-      "balance": "3333"
-    },
-    {
-      "id": "0.819833541860906",
-      "created_at": "04.03.2024",
-      "updated_at": "04.03.2024",
-      "user_id": "9aa2",
-      "name": "sdasdasd",
-      "currency": "AED",
-      "balance": "333"
+      "balance": "1000000"
     }
   ],
   "transactions": [
     {
-      "id": "e26d",
-      "created_at": "20240307, 17:21",
-      "updated_at": "17:21:25",
-      "user_id": "d6fe",
+      "id": "9052",
+      "created_at": "20240311, 17:49",
+      "updated_at": "17:49:29",
+      "user_id": "9731",
       "wallet": {
-        "created_at": "02.03.2024",
-        "updated_at": "02.03.2024",
-        "name": "Daler",
-        "currency": "BAM",
-        "balance": 1011
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49950000
       },
-      "total": "100",
+      "total": "50000",
       "category": "car",
-      "description": "ferrari",
-      "wallet_id": "0.7682254708077147"
+      "description": "tesla",
+      "wallet_id": "0.2252802480345799"
     },
     {
-      "id": "0659",
-      "created_at": "20240307, 17:23",
-      "updated_at": "17:23:33",
-      "user_id": "d6fe",
+      "id": "e5f8",
+      "created_at": "20240311, 17:57",
+      "updated_at": "17:57:05",
+      "user_id": "9731",
       "wallet": {
-        "created_at": "02.03.2024",
-        "updated_at": "02.03.2024",
-        "name": "Daler",
-        "currency": "USD",
-        "balance": 1134
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49940000
       },
-      "total": "100",
-      "category": "car",
-      "description": "ferrari",
-      "wallet_id": "0.4400490557438985"
+      "total": "10000",
+      "category": "burger",
+      "description": "burger",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "398d",
+      "created_at": "20240311, 17:57",
+      "updated_at": "17:57:24",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49939000
+      },
+      "total": "1000",
+      "category": "fries",
+      "description": "fries",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "2d37",
+      "created_at": "20240311, 18:26",
+      "updated_at": "18:26:27",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49937000
+      },
+      "total": "2000",
+      "category": "rr",
+      "description": "rr",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "0ca0",
+      "created_at": "20240311, 18:26",
+      "updated_at": "18:26:39",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49936000
+      },
+      "total": "1000",
+      "category": "tt",
+      "description": "tt",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "58a7",
+      "created_at": "20240311, 18:26",
+      "updated_at": "18:26:46",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49930100
+      },
+      "total": "5900",
+      "category": "gg",
+      "description": "gg",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "b516",
+      "created_at": "20240311, 18:26",
+      "updated_at": "18:26:57",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "RUB",
+        "balance": 49925656
+      },
+      "total": "4444",
+      "category": "hh",
+      "description": "hh",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "4924",
+      "created_at": "20240311, 18:28",
+      "updated_at": "18:28:23",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Rubles",
+        "currency": "AED",
+        "balance": 1986197.691904
+      },
+      "total": "30000",
+      "category": "jjj",
+      "description": "jjj",
+      "wallet_id": "0.2252802480345799"
+    },
+    {
+      "id": "cb71",
+      "created_at": "20240311, 19:1",
+      "updated_at": "19:01:44",
+      "user_id": "9731",
+      "wallet": {
+        "created_at": "11.03.2024",
+        "updated_at": "11.03.2024",
+        "name": "Gradus Visa",
+        "currency": "AED",
+        "balance": 9996666
+      },
+      "total": "3333",
+      "category": "333",
+      "description": "33",
+      "wallet_id": "0.24150729584530173"
     }
   ]
 }
