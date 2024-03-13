@@ -99,25 +99,30 @@ getData('/transactions?wallet_id=' + wallet_id)
             }
 
         });
+
+        transactionsChart(dates, totals)
     })
 
-let arr = ['2024-24-24', '2024-24-24', '2024-24-24', '2024-24-24']
+
 const ctx = document.getElementById('myChart');
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: dates,
-        datasets: [{
-            label: '# of Votes',
-            data: totals,
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+function transactionsChart(labels, values) {
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: '# of Votes',
+                data: values,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
+}

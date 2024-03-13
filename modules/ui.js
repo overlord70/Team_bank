@@ -91,13 +91,20 @@ export function createHeader() {
     let pages = {
         "/": glavnaya,
         "wallets": koshelek,
+        // "wallet": koshelek,
         "transactions": akcii
     }
 
     let page = location.pathname.split('/')[2]
     page = page ? page : "/"
+    console.log(pages[page]);
 
-    pages[page].classList.add('active_page')
+    if (pages[page]) {
+        pages[page].classList.add('active_page')
+    } else {
+        pages.wallets.classList.add('active_page')
+    }
+
 
 
     glavnaya.href = "/"
