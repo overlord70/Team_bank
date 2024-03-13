@@ -56,8 +56,8 @@
       "updated_at": "12.03.2024",
       "user_id": "3928",
       "name": "asd",
-      "currency": "AFN",
-      "balance": 438197582.80789
+      "currency": "USD",
+      "balance": 5544264.821442
     }
   ],
   "transactions": [
@@ -246,6 +246,91 @@
       "total": "444444",
       "category": "44",
       "description": "44",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "a715",
+      "created_at": "20240313, 20:27",
+      "updated_at": "20:27:40",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AFN",
+        "balance": 438195382.80789
+      },
+      "total": "2200",
+      "category": "322",
+      "description": "222",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "65d5",
+      "created_at": "20240313, 20:27",
+      "updated_at": "20:27:44",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AFN",
+        "balance": 438195160.80789
+      },
+      "total": "222",
+      "category": "2",
+      "description": "222",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "c352",
+      "created_at": "20240313, 20:27",
+      "updated_at": "20:27:47",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AFN",
+        "balance": 438190716.80789
+      },
+      "total": "4444",
+      "category": "44",
+      "description": "4",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "635e",
+      "created_at": "20240313, 20:27",
+      "updated_at": "20:27:51",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "AFN",
+        "balance": 438180717.80789
+      },
+      "total": "9999",
+      "category": "9",
+      "description": "99",
+      "wallet_id": "0.7187730500745224"
+    },
+    {
+      "id": "f33d",
+      "created_at": "20240313, 20:28",
+      "updated_at": "20:28:31",
+      "user_id": "3928",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "asd",
+        "currency": "USD",
+        "balance": 5544264.821442
+      },
+      "total": "500000",
+      "category": "ferrari",
+      "description": "f9",
       "wallet_id": "0.7187730500745224"
     }
   ]
