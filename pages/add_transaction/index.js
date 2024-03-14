@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         formData.forEach((val, key) => transaction[key] = val)
 
-        if (total_inp.value > 0 && !total_inp.classList.contains('error_input')) {
+        if (total_inp.value > 0 && !total_inp.classList.contains('error_input') && +transaction.total <= +selected_wallet.balance) {
             selected_wallet.balance = +selected_wallet.balance - +total_inp.value
 
             transaction.wallet_id = selected_wallet.id 
@@ -63,12 +63,16 @@ document.addEventListener("DOMContentLoaded", function () {
             delete selected_wallet.user_id
             transaction.wallet = selected_wallet
 
+
+
             patch(`/wallets/${transaction.wallet_id}`, { balance: selected_wallet.balance })
                 .then(res => {
                     if (res.status === 200 || res.status === 201) {
+                        
                         postData('/transactions', transaction)
                             .then(res => {
                                 if (res.status === 200 || res.status === 201) {
+                                    e.target.reset()
                                     location.assign('/pages/transactions/')
                                 }
                             })

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О кошельке</title>
+    <link rel="stylesheet" href="../../public/fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./style.scss">
+</head>
+<body>
+
+
+    <div class="wrap">
+        <div class="info-convert">
+            <div data-tilt data-tilt-scale="1.08" class="deck">
+                <div class="card">
+                    <div class="front face">
+                        <div class="top">
+                            <img src="../../public/icons/290143_cash_money_payment_wallet_icon.svg" alt="wallet">
+                            <h3 class="card_name">Card Name</h3>
+                        </div>
+
+                        <h2 class="card_balance">Balance</h2>
+                    </div>
+                    <div class="back face">
+                        <h1 class="card_back_name">Card Name</h1>
+                        <h3 class="currency">currency</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="convert">
+                <h1>Конвертировать в:</h1>
+
+                <form name="convert_form" id="convert_form">
+                    <select name="currency" id="currency">
+                    </select>
+
+                    <button>Конвертировать</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="../../modules/ui.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

@@ -18,7 +18,7 @@ form.onsubmit = (e) => {
 
     let fm = new FormData(e.target)
     let wallet = {
-        id: Math.random(),
+        id: String(Math.random()),
         created_at: new Date().toLocaleDateString(),
         updated_at: new Date().toLocaleDateString(),
         user_id: JSON.parse(user)?.id
