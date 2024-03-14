@@ -6,15 +6,17 @@
 
 .wrap {
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
     margin: 20px auto;
 }
 
 .add {
-    width: 282px;
-    height: 160px;
+    width: 280px;
+    height: 158px;
     border-radius: 10px;
     border: 2px dashed black;
     background-color: rgba(255, 255, 255, 0);
@@ -73,22 +75,6 @@
     transform: translate(-50%, -50%);
 }
 
-.ex {
-    width: 282px;
-    height: 160px;
-    border-radius: 10px;
-    background-color: aquamarine;
-}
-
-.cont {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    padding-top: 44px;
-}
-
 .all {
     display: flex;
     flex-direction: column;
@@ -108,6 +94,13 @@ p {
     font-size: 18px;
     font-weight: 700;
     color: #0047FF;
+}
+
+.ex {
+    width: 282px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: aquamarine;
 }
 
 header {
@@ -148,34 +141,5 @@ header {
     .box_r {
         display: flex;
         gap: 20px;
-    }
-}
-
-.reload {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-
-    .card_visa {
-        position: relative;
-        width: 282px;
-        height: 160px;
-        border-radius: 15px;
-
-        h3 {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 29px;
-            color: white;
-            margin: 10px 20px;
-        }
-
-        p {
-            margin: 0 20px;
-            position: absolute;
-            bottom: 10px;
-            color: white;
-        }
     }
 }
