@@ -20,6 +20,13 @@
       "name": "asd",
       "surname": "asd",
       "password": "1234"
+    },
+    {
+      "id": "3c66",
+      "email": "smukhitdinov471@gmail.com",
+      "name": "Sardor",
+      "surname": "Mukhitdinov ",
+      "password": "12345"
     }
   ],
   "wallets": [
